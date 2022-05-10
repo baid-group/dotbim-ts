@@ -1,0 +1,25 @@
+{
+  "name": "dotbim-ts",
+  "version": "1.0.0",
+  "description": "DotBim library written in TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf ./build && tsc",
+    "start:dev": "nodemon"
+  },
+  "author": "Maciej Lutostański",
+  "license": "ISC",
+  "dependencies": {
+    "class-transformer": "^0.5.1",
+    "es6-shim": "^0.35.6",
+    "guid-typescript": "^1.0.9",
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.31",
+    "nodemon": "^2.0.16",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  }
+}
