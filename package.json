@@ -1,9 +1,9 @@
 {
-  "name": "@baid/dotbim-ts",
+  "name": "@baid-group/dotbim-ts",
   "version": "0.4.0",
   "description": "DotBim library written in TypeScript",
-  "main": "dist/src/index.js",
-  "types": "dist/src/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "keywords": [
     "bim",
     "bcf",
@@ -13,10 +13,16 @@
   ],
   "scripts": {
     "build": "rimraf ./dist && tsc",
-    "start:dev": "nodemon"
+    "start:dev": "nodemon",
+    "publish": "npm run build && npm publish --access=public"
   },
   "author": "Maciej Lutostański",
   "license": "MIT",
+  "files": [
+    "dist/**/*"
+  ],
+  "homepage": "https://github.com/baid-group/dotbim-ts#readme",
+  "repository": "https://github.com/baid-group/dotbim-ts",
   "dependencies": {
     "class-transformer": "^0.5.1",
     "es6-shim": "^0.35.6",

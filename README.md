@@ -40,7 +40,7 @@ encode(dataToEncode);
 ```
 
 ## Developed
-dotbim-ts is developed and maintained by Baid Group Sp. z o.o. for everyone in BIM community!
+dotbim-ts is developed and maintained by Baid Group for everyone in BIM community!
 
 ## License
 dotbim-ts is licensed under the MIT license. Please read the LICENSE file in this repository for more details.
