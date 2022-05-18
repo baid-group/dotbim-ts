@@ -1,7 +1,7 @@
 import { parse, encode } from "../src";
-import * as encodeData from "./test-data/test-data.json";
+import { TEST_DATA } from "./test-data/test-data";
 
-const parsedData = parse(JSON.stringify(encodeData));
+const parsedData = parse(JSON.stringify(TEST_DATA));
 
 test("encode", () => {
   const encodedData = encode(parsedData);

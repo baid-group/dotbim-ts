@@ -1,7 +1,6 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@msgpack/msgpack': ^2.7.2
   '@types/jest': ^27.5.1
   '@types/node': ^17.0.31
   class-transformer: ^0.5.1
@@ -14,17 +13,14 @@ specifiers:
   ts-jest: ^28.0.2
   ts-node: ^10.7.0
   typescript: ^4.6.4
-  web-ifc: ^0.0.34
 
 dependencies:
   class-transformer: 0.5.1
   es6-shim: 0.35.6
   guid-typescript: 1.0.9
   reflect-metadata: 0.1.13
-  web-ifc: 0.0.34
 
 devDependencies:
-  '@msgpack/msgpack': 2.7.2
   '@types/jest': 27.5.1
   '@types/node': 17.0.31
   jest: 28.1.0_f2d79da18b36b874413f8c6cd9e51472
@@ -636,11 +632,6 @@ packages:
     dependencies:
       '@jridgewell/resolve-uri': 3.0.7
       '@jridgewell/sourcemap-codec': 1.4.13
-    dev: true
-
-  /@msgpack/msgpack/2.7.2:
-    resolution: {integrity: sha512-rYEi46+gIzufyYUAoHDnRzkWGxajpD9vVXFQ3g1vbjrBm6P7MBmm+s/fqPa46sxa+8FOUdEuRQKaugo5a4JWpw==}
-    engines: {node: '>= 10'}
     dev: true
 
   /@sinclair/typebox/0.23.5:
@@ -2869,10 +2860,6 @@ packages:
     dependencies:
       makeerror: 1.0.12
     dev: true
-
-  /web-ifc/0.0.34:
-    resolution: {integrity: sha512-crrrp9VXvxZQ7n4Uia7vqx4Dlp9FQy4Z4EwB5Ok9Hd7+dtcTMe8lPOFQYR1AxzNcqBzFxFzSiXX0v6VbRJzZKA==}
-    dev: false
 
   /which/2.0.2:
     resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==}

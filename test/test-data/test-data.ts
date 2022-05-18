@@ -1,4 +1,4 @@
-{
+export const TEST_DATA = {
   "schema_version": "1.0.0",
   "meshes": [
     {
