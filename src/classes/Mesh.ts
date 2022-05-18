@@ -6,7 +6,7 @@ export class Mesh {
 
   @Expose({ name: "mesh_id" })
   set meshId(val: number) {
-    if (val >= 0 && val <= 255) {
+    if (val >= 0) {
       this._meshId = val;
     } else {
       throw "MeshId should be >= 0";
