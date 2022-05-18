@@ -9,9 +9,9 @@ Here you can find small manual for developers regarding development of tools tha
 ## Installation
 
 ```cmd
-npm install @baid/dotbim-ts
+npm install @baid-group/dotbim-ts
 //or
-yarn add @baid/dotbim-ts
+yarn add @baid-group/dotbim-ts
 ```
 
 ## Using the library
