@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "meshes": [
+    {
+      "mesh_id": 0,
+      "coordinates": [1, 2, 3],
+      "indices": [4, 5, 6]
+    }
+  ],
+  "elements": [
+    {
+      "info": {
+        "id": "123"
+      },
+      "color": {
+        "r": 4,
+        "g": 5,
+        "b": 6,
+        "a": 7
+      },
+      "guid": "d0985490-ef59-4b0d-b906-a2fb4cf5d772",
+      "rotation": {
+        "qx": 1,
+        "qy": 2,
+        "qz": 3,
+        "qw": 4
+      },
+      "vector": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "type": "test_type",
+      "mesh_id": 0
+    }
+  ],
+  "info": {
+    "Author": "Baid",
+    "Date": "2022-05-01T00:00:00"
+  }
+}
