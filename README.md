@@ -18,7 +18,7 @@ yarn add @baid-group/dotbim-ts
 
 ### Parse
 ```ts
-import { parse } from '@baid/dotbim-ts';
+import { parse } from '@baid-group/dotbim-ts';
 import { readFileSync } from 'fs';
 
 const fileData: string = readFileSync('path/to/file.bim', {encoding: 'utf-8'});
@@ -29,7 +29,7 @@ parse(fileData)
 
 ### Encode
 ```ts
-import { encode, BimFile } from '@baid/dotbim-ts';
+import { encode, BimFile } from '@baid-group/dotbim-ts';
 
 const dataToEncode: BimFile = {
     // some valid dotbim object
