@@ -1,8 +1,6 @@
 # dotbim-ts
 
-## Description
-
-Open-source TypeScript parser and encoder for dotbim file format. Read more about dotbim here: https://github.com/paireks/dotbim
+Open-source TypeScript parser and encoder for dotbim file format.
 
 dotbim's website: https://dotbim.net/
 
@@ -12,24 +10,25 @@ Here you can find small manual for developers regarding development of tools tha
 
 ```cmd
 npm install @baid/dotbim-ts
-
 //or
-
 yarn add @baid/dotbim-ts
 ```
 
 ## Using the library
 
 ### Parse
-```cmd
+```ts
 import { parse } from '@baid/dotbim-ts';
+import { readFileSync } from 'fs';
 
-const parsedData = parse()
+const fileData: string = readFileSync('path/to/file.bim', {encoding: 'utf-8'});
+
+parse(fileData)
 
 ```
 
 ### Encode
-```cmd
+```ts
 import { encode, BimFile } from '@baid/dotbim-ts';
 
 const dataToEncode: BimFile = {
@@ -39,3 +38,9 @@ const dataToEncode: BimFile = {
 encode(dataToEncode);
 
 ```
+
+## Developed
+dotbim-ts is developed and maintained by Baid Group Sp. z o.o. for everyone in BIM community!
+
+## License
+dotbim-ts is licensed under the MIT license. Please read the LICENSE file in this repository for more details.
