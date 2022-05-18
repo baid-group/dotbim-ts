@@ -1,6 +1,6 @@
 import { parse } from "../src";
 import { BimFile } from "../src/classes/File";
-import { TEST_DATA } from "./test-data/test-data";
+import * as TEST_DATA from "./test-data/test-data.json";
 
 const data = JSON.stringify(TEST_DATA);
 
