@@ -59,4 +59,8 @@ test("parse elements", () => {
   expect(firstElementVector.x).toBe(0);
   expect(firstElementVector.y).toBe(0);
   expect(firstElementVector.z).toBe(0);
+
+  const firstElementFaceColors = firstElement.faceColors;
+
+  expect(firstElementFaceColors).toStrictEqual([1, 2, 3, 4]);
 });
