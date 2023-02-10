@@ -1,14 +1,27 @@
 import { Expose } from "class-transformer";
 
+type Enumerate<
+  N extends number,
+  Acc extends number[] = []
+> = Acc["length"] extends N
+  ? Acc[number]
+  : Enumerate<N, [...Acc, Acc["length"]]>;
+type IntRange<F extends number, T extends number> = Exclude<
+  Enumerate<T>,
+  Enumerate<F>
+>;
+
+export type ColorRange = IntRange<0, 255>;
+
 @Expose({ name: "color" })
 export class Color {
-  private _r!: number;
-  private _g!: number;
-  private _b!: number;
-  private _a!: number;
+  private _r!: ColorRange;
+  private _g!: ColorRange;
+  private _b!: ColorRange;
+  private _a!: ColorRange;
 
   @Expose()
-  set r(val: number) {
+  set r(val: ColorRange) {
     if (val >= 0 && val <= 255) {
       this._r = val;
     } else {
@@ -17,7 +30,7 @@ export class Color {
   }
 
   @Expose()
-  set g(val: number) {
+  set g(val: ColorRange) {
     if (val >= 0 && val <= 255) {
       this._g = val;
     } else {
@@ -26,7 +39,7 @@ export class Color {
   }
 
   @Expose()
-  set b(val: number) {
+  set b(val: ColorRange) {
     if (val >= 0 && val <= 255) {
       this._b = val;
     } else {
@@ -35,7 +48,7 @@ export class Color {
   }
 
   @Expose()
-  set a(val: number) {
+  set a(val: ColorRange) {
     if (val >= 0 && val <= 255) {
       this._a = val;
     } else {
@@ -43,19 +56,19 @@ export class Color {
     }
   }
 
-  get r(): number {
+  get r(): ColorRange {
     return this._r;
   }
 
-  get b(): number {
+  get b(): ColorRange {
     return this._b;
   }
 
-  get g(): number {
+  get g(): ColorRange {
     return this._g;
   }
 
-  get a(): number {
+  get a(): ColorRange {
     return this._a;
   }
 }
