@@ -13,7 +13,7 @@ test("parse House.bim", () => {
 test("parse schemaVersion", () => {
   const house = parse(data);
 
-  expect(house.schemaVersion).toBe("1.0.0");
+  expect(house.schemaVersion).toBe("1.1.0");
 });
 
 test("parse info", () => {

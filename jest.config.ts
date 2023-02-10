@@ -1,7 +1,7 @@
-import type { Config } from "@jest/types";
+import { InitialOptionsTsJest } from "ts-jest";
 
 // Sync object
-const config: Config.InitialOptions = {
+const config: InitialOptionsTsJest = {
   verbose: true,
   preset: "ts-jest",
   testEnvironment: "node",

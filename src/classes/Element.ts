@@ -1,5 +1,5 @@
 import { Expose, Type } from "class-transformer";
-import { Color } from "./Color";
+import { Color, ColorRange } from "./Color";
 import { Rotation } from "./Rotation";
 import { Vector } from "./Vector";
 import { Guid } from "guid-typescript";
@@ -8,6 +8,7 @@ import { Info } from "./Info";
 @Expose({ name: "element" })
 export class Element {
   private _guid!: string;
+  private _faceColors?: ColorRange[] | null;
 
   @Expose()
   set guid(val: string) {
@@ -39,6 +40,21 @@ export class Element {
   @Expose()
   @Type(() => Color)
   color!: Color;
+
+  @Expose({ name: "face_colors", since: 1.1 })
+  set faceColors(val: ColorRange[] | null) {
+    if (val && val.filter((item) => item >= 0 && item <= 255).length) {
+      this._faceColors = val;
+    } else if (!val) {
+      this._faceColors = null;
+    } else {
+      throw "faceColors values should be between 0-255";
+    }
+  }
+
+  get faceColors(): ColorRange[] | null {
+    return this._faceColors || null;
+  }
 
   @Expose()
   @Type(() => Info)
